@@ -5,6 +5,8 @@
  */
 package problema3;
 
+import java.util.Scanner;
+
 /**
  *
  * @author SALAS
@@ -15,7 +17,27 @@ public class Problema3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner entrada = new Scanner (System.in);
+        
+        String nota1;
+         String nota2;
+          String nota3;
+          double prom;
+    System.out.printf("Ingrese la primer nota del estudiante");
+        nota1 = entrada.nextLine();
+        System.out.printf("Ingrese la segunda nota del estudiante");
+        nota2 = entrada.nextLine();
+        System.out.printf("Ingrese la tercer nota del estudiante");
+        nota3 = entrada.nextLine();
+        
+        
+        prom = (Double.parseDouble(nota1) + Double.parseDouble(nota2)
+                + Double.parseDouble(nota3))/3;
+        
+         String respuesta = prom >= 14 ? "Usted paso de año"
+                 : "Usted no paso de año ";
+         
+         System.out.printf("Su promedio es: %s\n%s\n ",prom,respuesta);
     }
     
 }
