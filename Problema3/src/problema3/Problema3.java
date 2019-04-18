@@ -23,20 +23,21 @@ public class Problema3 {
          String nota2;
           String nota3;
           double prom;
+          //Ingreso de notas
     System.out.printf("Ingrese la primer nota del estudiante");
         nota1 = entrada.nextLine();
         System.out.printf("Ingrese la segunda nota del estudiante");
         nota2 = entrada.nextLine();
         System.out.printf("Ingrese la tercer nota del estudiante");
         nota3 = entrada.nextLine();
-        
+        //CALCULO DE NOTAS
         
         prom = (Double.parseDouble(nota1) + Double.parseDouble(nota2)
                 + Double.parseDouble(nota3))/3;
-        
-         String respuesta = prom >= 14 ? "Usted paso de año"
-                 : "Usted no paso de año ";
-         
+        //CONDICIONALES
+         String respuesta = prom >= 14 ? "Usted paso de año :D"
+                 : "Usted no paso de año :S ";
+         //RESPUESTA FINAL
          System.out.printf("Su promedio es: %s\n%s\n ",prom,respuesta);
     }
     
