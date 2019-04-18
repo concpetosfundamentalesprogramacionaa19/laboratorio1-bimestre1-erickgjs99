@@ -25,7 +25,7 @@ public class Problema2 {
         double part1;
         double part2;
         double result;
-        
+        //entrada de de datos x y z
         System.out.printf("Ingrese el valor de x");
         x = entrada.nextLine();
         
@@ -34,16 +34,19 @@ public class Problema2 {
         
          System.out.printf("Ingrese el valor de z");
         z = entrada.nextLine();
-        
+        //conversion de string a double
         double entradax = Double.parseDouble(x);
         double entraday = Double.parseDouble(y);
         double entradaz = Double.parseDouble(z);
-        
+        //operaciones de ejercicio
         part1 = entradax + (entraday/entradaz) ;
         part2 = entradax - (entraday/entradaz) ;
         result = part1 / part2;
-        
-        System.out.printf("El resultado de m =  %s\n", result);
+        //impresiòn de resultados
+        System.out.printf("El valor de m, en base a las variables:\n "
+                + "x = %s\n y = %s\n z = %s\n da como resultado:\n\t m = %s\n"
+                , entradax,entraday,entradaz,result);
+                
     }
     
 }
